@@ -59,7 +59,7 @@ namespace GestionMedic
             {
 
                 dbContext.UpdateRange();
-                Console.WriteLine("Valeur (MEDICAMENT) update à la table");
+                Console.WriteLine("Valeur (MEDICAMENT) update à la table !");
             }
         }
         static void Main(string[] args)
