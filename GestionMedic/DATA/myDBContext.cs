@@ -14,9 +14,11 @@ namespace GestionMedic.DATA
     public class MyDbContext : DbContext
     {
         public DbSet<categories> categories { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=localhost;database=gsb_csv;user=root;password=");
+            optionsBuilder.UseMySQL("Server=172.22.119.10;Database=gsb_csv;uid=sql;password=sql;");
+            //optionsBuilder.UseMySQL("server=localhost;database=gsb_csv;user=root;password=");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

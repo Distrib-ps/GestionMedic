@@ -11,7 +11,7 @@ namespace GestionMedic.model
     {
         [Key]
         public int id { get; set; }
-        [MaxLength(50)]
+        [MaxLength(250)]
         public string nom { get; set; }
         [MaxLength(250)]
         public string image { get; set; }

@@ -50,7 +50,6 @@ namespace GestionMedic
                         var medicament = new medicaments(Convert.ToInt32(data[0]), data[1].Replace("\"", ""), data[2], data[3], Convert.ToInt32(data[4]));
                         dbContext.Add(medicament);
                     }
-
                     dbContext.SaveChanges();
                     Console.WriteLine("Nouvelle valeur (MEDICAMENT) ajouter à la table");
                 }
@@ -59,7 +58,7 @@ namespace GestionMedic
             {
 
                 dbContext.UpdateRange();
-                Console.WriteLine("Valeur (MEDICAMENT) update à la table !");
+                Console.WriteLine(ex);
             }
         }
         static void Main(string[] args)
